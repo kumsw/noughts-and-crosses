@@ -1,0 +1,51 @@
+add the files 
+    import componants to new index.js
+
+
+
+seperate game, board and square
+    change into functional companant
+        Square ::
+            STATE:     
+            PROPS: 
+                {placeholder values (0-9)}
+                onClick - 
+            BEHAVIOUR:
+                renders a single button
+                button click will call function change the square to either x || o
+
+
+
+        board::
+            STATE:  
+                array of squares  
+                (playerMove (x-mark)   )
+            PROPS: 
+                placeholder values (x, o , null)
+            BEHAVIOUR:
+                renders 9 squares
+                (stored in [])  
+                squares will be rendered onClick
+                    (function handleClick)                
+        
+
+        Game::
+            STATE:  (stored in board componant)
+            PROPS:
+            BEHAVIOUR:
+                renders the board 
+
+
+
+
+
+
+
+
+
+
+
+
+
+this gets us to the basic square.
+from here continue folloing the tutorial while changing into functional componants
