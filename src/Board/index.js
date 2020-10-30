@@ -14,7 +14,6 @@ function Board() {
     null,
     null,
   ]);
-  //   const [mark, setMark] = useState({ value: "X" });
   const [isXTurn, setIsXTurn] = useState(true);
 
   function handleClick(index) {
@@ -24,7 +23,7 @@ function Board() {
       return;
     }
     const newSquares = [...squares.slice()];
-    newSquares[index] = isXTurn ? "X" : "O";
+    newSquares[index] = isXTurn ? "👻" : "🎃";
     setSquares(newSquares);
     setIsXTurn(!isXTurn);
   }
