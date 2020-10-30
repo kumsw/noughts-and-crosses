@@ -1,39 +1,48 @@
 add the files 
     import componants to new index.js
 
-
-
 seperate game, board and square
     change into functional companant
-        Square ::
-            STATE:     
+        
+        
+        board ----------------
+            STATE:  
+                [squares, setSquares] ,
+                [mark , setMark]  
+            [Turn , setTurn]
+            
+            
+                
+            
+            BEHAVIOUR:
+                renders 9 squares (stored in [])  
+                squares will be rendered onClick  <Square value = {squares[0]}/>
+                    (function handleClick: 
+                    1.change the square to either x || o 
+                        return early if someone has won or the square has already been filled
+                    1.Whose turn is it
+                ***** --> use helper function to determine the winner?         
+                
+            
+            Square ---------------
+                
             PROPS: 
-                {placeholder values (0-9)}
-                onClick - 
+                {values ('o' 'x' 'null} from board
+                {handleClick  function} from board 
+                
             BEHAVIOUR:
                 renders a single button
-                button click will call function change the square to either x || o
+                button onClick will call handleClick function 
+                    
 
 
 
-        board::
-            STATE:  
-                array of squares  
-                (playerMove (x-mark)   )
-            PROPS: 
-                placeholder values (x, o , null)
-            BEHAVIOUR:
-                renders 9 squares
-                (stored in [])  
-                squares will be rendered onClick
-                    (function handleClick)                
-        
-
-        Game::
-            STATE:  (stored in board componant)
+        Game ----------------
+            
             PROPS:
+
             BEHAVIOUR:
-                renders the board 
+                renders the board component < board/> 
 
 
 
@@ -42,10 +51,3 @@ seperate game, board and square
 
 
 
-
-
-
-
-
-this gets us to the basic square.
-from here continue folloing the tutorial while changing into functional componants
