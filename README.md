@@ -6,7 +6,7 @@
 
 This was a hackathon with a twist. I worked in a pair to build a noughts and crosses game using React but we had to convert an old style class-based components [tutorial](https://reactjs.org/tutorial/tutorial.html) into a stateful application. It was a great reverse engineering style hackathon.
 
-![noughts and crosses landing page- ghosts wins!](noughts-and-crosses/public/ticTacToe.png)
+![noughts and crosses landing page- ghosts wins!](public/ticTacToe.png)
 
 ## To Start
 
